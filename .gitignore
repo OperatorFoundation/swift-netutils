@@ -38,3 +38,5 @@ Carthage/Build
 
 # Swift Package Manager
 .build
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.DS_Store

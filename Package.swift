@@ -1,9 +1,13 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
     name: "NetUtils",
+    platforms: [
+        .macOS(.v11),
+        .iOS(.v14)
+    ],
     products: [
         .library(
             name: "NetUtils",
@@ -20,5 +24,6 @@ let package = Package(
             name: "NetUtilsTests",
             dependencies: ["NetUtils"],
             path: "NetUtilsTests")
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
